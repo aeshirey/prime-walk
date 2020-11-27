@@ -1,0 +1,14 @@
+[package]
+name = "prime-walk"
+version = "0.1.0"
+authors = ["Adam Shirey <adam@shirey.ch>"]
+edition = "2018"
+
+[dependencies]
+image = "0.23.12"
+imageproc = "0.22.0"
+reikna = "0.12.3"
+
+[profile.release]
+lto = "fat"
+#codegen-units = 1
